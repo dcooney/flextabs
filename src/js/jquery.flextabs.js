@@ -48,7 +48,6 @@
                });
             }
             
-            
             // Create our <select/> menu
             $('li a', nav).each(function(e) {
                var item = $(this);
@@ -69,7 +68,9 @@
             });            
                         
             var href = $('li', nav).eq(current).find('a').attr('href');
-            history.pushState(href, document.title, href);    
+            if(urlHash){
+               history.pushState(href, document.title, href);    
+            }
                     
             methods.toggle(current, false); // Display current pane
          },

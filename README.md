@@ -1,2 +1,2 @@
 # flextabs
-A responsive jQuery tab to &lt;select> plugin
+FlexTabs is responsive, jQuery based tab to &lt;select> navigation.
