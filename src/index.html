@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>FlexTabs - Responsive Tab to select navigation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css">   
+   <link rel="stylesheet" href="css/foundation.min.css">
+   <link rel="stylesheet" href="css/screen.css">
+   <link rel="stylesheet" href="css/flextabs.css">
+   
+</head>
+
+<body>
+   <div id="page-content" role="main">
+      <div class="row">
+         <div class="large-10 large-centered columns">
+         	
+            <!-- .ecatabs -->
+            <div class="flextabs">
+               
+               <ul class="flextabs-nav hide-for-small">
+                  <li><a href="#panel-1">Tab #1</a></li>
+                  <li><a href="#panel-2">Tab #2</a></li>
+                  <li><a href="#panel-3">Tab #3</a></li>
+                  <li><a href="#panel-4">Tab #4</a></li>
+                  <li><a href="#panel-5">Tab #5</a></li>
+               </ul>
+               
+               <!-- Panes -->
+               <div class="flextabs-panes">
+                  
+                  <div class="flextabs-pane">
+                      <h2>Tab Panel 1</h2>                
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                  </div>
+                  
+                  <div class="flextabs-pane">
+                      <h2>Tab Panel 2</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                  </div>
+                  
+                  <div class="flextabs-pane">
+                      <h2>Tab Panel 3</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                  </div>
+                  
+                  <div class="flextabs-pane">
+                      <h2>Tab Panel 4</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                  </div>
+                  
+                  <div class="flextabs-pane">
+                      <h2>Tab Panel 5</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et euismod elit. Nulla a elementum urna. Suspendisse viverra vehicula nulla.</p>
+                  </div>
+                  
+               </div>
+               <!-- End Panes -->
+               
+            </div>
+            <!-- End .flextabs -->
+            
+         </div>        
+            
+         <div class="large-10 large-centered columns">
+            <script src="https://gist.github.com/dcooney/11fcc49fad4d54668738.js"></script>               
+         </div>
+         
+      </div>
+   </div>
+    
+      
+   <footer class="site-footer" role="contentinfo">
+   	<div class="column">
+			<p>&copy; Connekt Media</p>
+   	</div>
+   </footer>
+   
+   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js?ver=3.9.1'></script>
+   <script type='text/javascript' src='js/jquery.flextabs.js'></script>
+   <script>
+   	$('.flextabs').flextabs({
+   	    start: 0, // 0 = first
+   	    nav: '.flextabs-nav', // default = '.flextabs-nav'
+   	    select_wrap_class: 'hide-for-medium-up', // Add classes to the <select> navigation wrapper
+   	    select_class: '', // Add classes to <select> menu e.g. drop drop-menu
+   	    urlHash: true, // Enable deeplinking of tab content [true | false]
+   	});
+   </script>
+</body>
+</html>

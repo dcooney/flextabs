@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body, 
+html{
+   background-color: #222;
+}
+
+body {
+  line-height: 1.4em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+.row{
+   max-width: 70em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+p,
+li,
+input,
+textarea,
+table td,
+body {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 1.4em;
+  font-weight: 400;
+  -webkit-appearance: none;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+p, ul, ol {
+  margin: 0 0 1.25em;
+}
+
+ul, ol, li {
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  padding: 5px;
+  list-style: none;
+}
+
+ul li,
+ol li ul li {
+  margin: 0 0 10px;
+  padding: 0 0 0 12px;
+  list-style: none;
+}
+
+ul ul {
+  margin: 0 0;
+}
+
+ul li li {
+  margin: 7px 0;
+}
+
+ol {
+  margin-left: 8px;
+  padding: 5px;
+  counter-reset: item;
+}
+ol li {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 20px;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+  padding: 0;
+  margin: 20px 0;
+  line-height: 1.15em;
+  text-transform: none;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/*
+*
+* Base styles for content layout
+*
+*/
+
+#page-content {
+   background-color: #efefef;
+  padding: 100px 20px 100px;
+  display: block;
+  width: 100%;
+}
+
+
+footer.site-footer {
+  width: 100%;
+  display: block;
+  background: #222;
+  padding: 40px 0 80px;
+}
+footer.site-footer p {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+
+/*
+*
+* Select Replacement
+*
+*/
+
+.flextabs-select-wrap {
+  background: #fff url("../img/bkg-select.png") no-repeat right center;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: auto;
+  margin: 0 0 35px;
+  overflow: hidden;
+  width: 100%;
+}   
+   .flextabs-select-wrap select{  
+      cursor: pointer;
+      width: 120%;
+      width: calc(100% + 20px);
+      height: auto;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+      border: medium none;
+      color: #666;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 8px;
+   }
+   
